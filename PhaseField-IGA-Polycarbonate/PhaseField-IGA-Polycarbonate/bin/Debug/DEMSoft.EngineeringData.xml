@@ -1,0 +1,1989 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DEMSoft.EngineeringData</name>
+    </assembly>
+    <members>
+        <member name="T:DEMSoft.EngineeringData.AnisotropicDielectricMatrix">
+            <summary>
+            Anisotropic Dielectric Matrix class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.AnisotropicDielectricMatrix.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Constructor scalar Anisotropic Dielectric Matrix .
+            2D structure
+            |eps11  eps12|
+            |sym    eps22|
+            
+            3D structure
+            |eps11  eps12  eps13|
+            |       eps22  eps23|
+            |sym           eps33|
+            </summary>
+            <param name="eps11">Electric permittivity X</param>
+            <param name="eps12">Electric permittivity XY</param>
+            <param name="eps13">Electric permittivity XZ</param>
+            <param name="eps22">Electric permittivity Y</param>
+            <param name="eps23">Electric permittivity YZ</param>
+            <param name="eps33">Electric permittivity Z</param>
+            <param name="isStrain">TRUE : electric permittivity at constant strain [F/m], FALSE : electric permittivity at constant stress</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.AnisotropicDielectricMatrix.GetMatrix">
+            <summary>
+            Return Anisotropic Dielectric Matrix
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.AnisotropicDielectricMatrix.GetIsStrain">
+            <summary>
+            Return is strain or stress
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.ElectricPermittivityX">
+            <summary>
+            Relative electric permittivity X direction class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ElectricPermittivityX.#ctor(System.Double)">
+            <summary>
+            Constructor of Relative electric permittivity X direction
+            </summary>
+            <param name="perX">value of Relative electric permittivity X direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ElectricPermittivityX.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of Relative electric permittivity X direction
+            </summary>
+            <param name="perX">value of Relative electric permittivity X direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ElectricPermittivityX.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of Relative electric permittivity X direction
+            </summary>
+            <param name="perX">value of Relative electric permittivity X direction</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.ElectricPermittivityY">
+            <summary>
+            Relative electric permittivity Y direction class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ElectricPermittivityY.#ctor(System.Double)">
+            <summary>
+            Constructor of Relative electric permittivity Y direction
+            </summary>
+            <param name="perY">value of Relative electric permittivity Y direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ElectricPermittivityY.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of Relative electric permittivity Y direction
+            </summary>
+            <param name="perY">value of Relative electric permittivity Y direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ElectricPermittivityY.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of Relative electric permittivity Y direction
+            </summary>
+            <param name="perY">value of Relative electric permittivity Y direction</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.ElectricPermittivityZ">
+            <summary>
+            Relative electric permittivity Z direction class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ElectricPermittivityZ.#ctor(System.Double)">
+            <summary>
+            Constructor of Relative electric permittivity Z direction
+            </summary>
+            <param name="perZ">value of Relative electric permittivity Z direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ElectricPermittivityZ.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of Relative electric permittivity Z direction
+            </summary>
+            <param name="perZ">value of Relative electric permittivity Z direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ElectricPermittivityZ.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of Relative electric permittivity Z direction
+            </summary>
+            <param name="perZ">value of Relative electric permittivity Z direction</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.OrthotropicDielectricMatrix">
+            <summary>
+            Orthotropic Dielectric Matrix class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicDielectricMatrix.#ctor(System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Constructor of Orthotropic Dielectric Matrix
+            </summary>
+            <param name="perX">Relative electric permittivity X direction</param>
+            <param name="perY">Relative electric permittivity Y direction</param>
+            <param name="perZ">Relative electric permittivity Z direction</param>
+            <param name="isStrain">TRUE : electric permittivity at constant strain [F/m], FALSE : electric permittivity at constant stress</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.PiezoelectricMatrix">
+            <summary>
+            Piezoelectric Matrix relates terms x, y, z, xy, yz, xz to x, y, z class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PiezoelectricMatrix.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Constructor scalar Piezoelectric Matrix relates terms x, y, z, xy, yz, xz to x, y, z.
+            2D structure
+            |e11  e12|
+            |e21  e22|
+            |e31  e32|
+            |e41  e42|
+            
+            3D structure
+            |e11  e12  e13|
+            |e21  e22  e23|
+            |e31  e32  e33|
+            |e41  e42  e43|
+            |e51  e52  e53|
+            |e61  e62  e63|
+            </summary>
+            <param name="isStrain">TRUE : permittivity at constant strain [], FALSE : permittivity at constant stress [m/V]</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PiezoelectricMatrix.GetMatrix">
+            <summary>
+            Return Piezoelectric Matrix
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PiezoelectricMatrix.GetIsStrain">
+            <summary>
+            Return is strain or stress
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.VolumeFractionFourParameter">
+            <summary>
+            Volume fraction with four parameters
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.VolumeFractionFourParameter.CreateVolumeFractionFunction(System.Int32,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Return a volume fraction function with four parameters. Variable z=[-h/2 , h/2]. Type I: Vc = [ 1 - a( 1/2 + z/h ) + b( 1/2 + z/h )^c ]^n, Type II: Vc = [ 1 - a( 1/2 - z/h ) + b( 1/2 - z/h )^c ]^n
+            </summary>
+            <param name="type">Type of fraction function with four parameters</param>
+            <param name="h">thickness of plate with graded distribution material</param>
+            <param name="a">a parameter</param>
+            <param name="b">b parameter</param>
+            <param name="c">c parameter</param>
+            <param name="n">n parameter</param>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.VolumeFractionFourParameter.CreateVolumeFractionFunction(System.Int32,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Return a volume fraction function with four parameters. Variable xi=[0, 1]. Type I: Vc = [ 1 - a( xi ) + b( xi )^c ]^n, Type II: Vc = [ 1 - a( 1 - xi ) + b( 1 - xi )^c ]^n
+            </summary>
+            <param name="type">Type of fraction function with four parameters</param>
+            <param name="a">a parameter</param>
+            <param name="b">b parameter</param>
+            <param name="c">c parameter</param>
+            <param name="n">n parameter</param>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MooneyRivlinModel.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor 2-parameters Mooney-Rivlin model
+            </summary>
+            <param name="c10">Material constants characterizing the deviatoric deformation of the material</param>
+            <param name="c01">Material constants characterizing the deviatoric deformation of the material</param>
+            <param name="D1">Incompressibility parameter, as 2/K, K is the bulk modulus</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.NeoHookeanModel">
+            <summary>
+            Neo-Hookean model for hyperelastic problem
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.NeoHookeanModel.#ctor(System.Double,System.Double)">
+            <summary>
+            Constructor Neo-Hookean model
+            </summary>
+            <param name="mu">Shear modulus</param>
+            <param name="D1">Incompressibility parameter, as 2/K, K is the bulk modulus</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.NeoHookeanModel.#ctor(DEMSoft.EngineeringData.MaterialPropertyName,System.Double,DEMSoft.EngineeringData.MaterialPropertyName,System.Double)">
+            <summary>
+            Constructor Neo-Hookean model
+            </summary>
+            <param name="firstProperty"></param>
+            <param name="firstValue"></param>
+            <param name="secondProperty"></param>
+            <param name="secondValue"></param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.AnisotropicElasticity">
+            <summary>
+            Anisotropic elasticity material class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.AnisotropicElasticity.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Constructor scalar Anisotropic elasticity material.
+            2D structure
+            |D11         sym   |
+            |D21  D22          |
+            |D31  D32  D33     |
+            |D41  D42  D43  D44|
+            
+            3D structure
+            |D11                   sym   |
+            |D21  D22                    |
+            |D31  D32  D33               |
+            |D41  D42  D43  D44          |
+            |D51  D52  D53  D54  D55     |
+            |D61  D62  D63  D64  D65  D66|
+            </summary>
+            <param name="isInverse">If isInverse equals true, coefficient's unit is [N/m^2]</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.AnisotropicElasticity.GetAnisotropicElasticityMatrix">
+            <summary>
+            Return Anisotropic Elasticity Matrix
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.AnisotropicElasticity.GetIsInverseMatrix">
+            <summary>
+            Use Elasticity matrix inverted before use (input in flexibility form). This option is not valid for structure.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.BulkModulus">
+            <summary>
+            Bulk modulus class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.BulkModulus.#ctor(System.Double)">
+            <summary>
+            Constructor of bulk modulus class
+            </summary>
+            <param name="value">value of bulk modulus</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.BulkModulus.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable bulk modulus class
+            </summary>
+            <param name="value">value of bulk modulus</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.BulkModulus.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables bulk modulus class
+            </summary>
+            <param name="value">value of bulk modulus</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.PairOfIsotropicElasticity">
+            <summary>
+            Pair of Isotropic elasticity material
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.PairOfIsotropicElasticity.YoungModulusAndPoissonRatio">
+            <summary>
+            Young's modulus and Poisson's ratio
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.PairOfIsotropicElasticity.ShearModulusAndPoissonRatio">
+            <summary>
+            Shear modulus and Poisson's ratio
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.PairOfIsotropicElasticity.BulkModulusAndPoissonRatio">
+            <summary>
+            Bulk modulus and Poisson's ratio
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.PairOfIsotropicElasticity.ShearModulusAndYoungModulus">
+            <summary>
+            Shear modulus and Young's modulus
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.PairOfIsotropicElasticity.BulkModulusAndYoungModulus">
+            <summary>
+            Bulk modulus and Young's modulus
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.PairOfIsotropicElasticity.BulkModulusAndShearModulus">
+            <summary>
+            Bulk modulus and Shear modulus
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.PairOfIsotropicElasticity.LameParameterAndShearModulus">
+            <summary>
+            Lamé's first parameter and Shear modulus
+            </summary>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.IsotropicElasticity">
+            <summary>
+            Isotropic elasticity material class. It stores pair of Isotropic elasticity material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicElasticity.#ctor(DEMSoft.EngineeringData.MaterialPropertyName,System.Double,DEMSoft.EngineeringData.MaterialPropertyName,System.Double)">
+            <summary>
+            Constructor Isotropic elasticity material.
+            </summary>
+            <param name="firstProperty">First name of material property</param>
+            <param name="firstValue">First value of material property</param>
+            <param name="secondProperty">Second name of material property</param>
+            <param name="secondValue">Second value of material property</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicElasticity.#ctor(DEMSoft.EngineeringData.PairOfIsotropicElasticity,System.Double,System.Double)">
+            <summary>
+            Constructor Isotropic elasticity material.
+            </summary>
+            <param name="typePair">Type of pair of isotropic elasticity material property</param>
+            <param name="firstValue">First value of material property</param>
+            <param name="secondValue">Second value of material property</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicElasticity.#ctor(DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor one variable Isotropic elasticity material.
+            </summary>
+            <param name="youngModulus">Young's modulus</param>
+            <param name="nu">Poisson's ratio</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicElasticity.#ctor(DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor two variables Isotropic elasticity material.
+            </summary>
+            <param name="youngModulus">Young's modulus</param>
+            <param name="nu">Poisson's ratio</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.LameParameter">
+            <summary>
+            Lamé constant class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.LameParameter.#ctor(System.Double)">
+            <summary>
+            Constructor Lamé constant
+            </summary>
+            <param name="value">value of Lamé constant</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.LameParameter.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Lamé constant class
+            </summary>
+            <param name="value">value of Lamé constant</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.LameParameter.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Lamé constant class
+            </summary>
+            <param name="value">value of Lamé constant</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.OrthotropicElasticity">
+            <summary>
+            Orthotropic elasticity material class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicElasticity.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor scalar Anisotropic elasticity material.
+            2D structure
+            |D11         sym   |
+            |D21  D22          |
+            |D31  D32  D33     |
+            | 0    0    0   D44|
+            
+            3D structure
+            |D11                   sym   |
+            |D21  D22                    |
+            |D31  D32  D33               |
+            | 0    0    0   D44          |
+            | 0    0    0    0   D55     |
+            | 0    0    0    0    0   D66|
+            </summary>
+            
+            <summary>
+            Constructor scalar Orthotropic elasticity material.
+            </summary>
+            <param name="Ex">Young's modulus X direction</param>
+            <param name="Ey">Young's modulus Y direction</param>
+            <param name="Ez">Young's modulus Z direction</param>
+            <param name="nuXY">Poisson's ratio XY</param>
+            <param name="nuYZ">Poisson's ratio YZ</param>
+            <param name="nuXZ">Poisson's ratio XZ</param>
+            <param name="GXY">Shear modulus XY</param>
+            <param name="GYZ">Shear modulus YZ</param>
+            <param name="GXZ">Shear modulus XZ</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicElasticity.#ctor(DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor scalar Orthotropic elasticity material.
+            </summary>
+            <param name="Ex">Young's modulus X direction</param>
+            <param name="Ey">Young's modulus Y direction</param>
+            <param name="Ez">Young's modulus Z direction</param>
+            <param name="nuXY">Poisson's ratio XY</param>
+            <param name="nuYZ">Poisson's ratio YZ</param>
+            <param name="nuXZ">Poisson's ratio XZ</param>
+            <param name="GXY">Shear modulus XY</param>
+            <param name="GYZ">Shear modulus YZ</param>
+            <param name="GXZ">Shear modulus XZ</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicElasticity.#ctor(DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor two variables Orthotropic elasticity material.
+            </summary>
+            <param name="Ex">Young's modulus X direction</param>
+            <param name="Ey">Young's modulus Y direction</param>
+            <param name="Ez">Young's modulus Z direction</param>
+            <param name="nuXY">Poisson's ratio XY</param>
+            <param name="nuYZ">Poisson's ratio YZ</param>
+            <param name="nuXZ">Poisson's ratio XZ</param>
+            <param name="GXY">Shear modulus XY</param>
+            <param name="GYZ">Shear modulus YZ</param>
+            <param name="GXZ">Shear modulus XZ</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.PoissonRatio">
+            <summary>
+            Poisson's ratio class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatio.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Poisson's ratio class
+            </summary>
+            <param name="value">value of Poisson's ratio</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatio.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Poisson's ratio class
+            </summary>
+            <param name="value">value of Poisson's ratio</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatio.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Poisson's ratio class
+            </summary>
+            <param name="value">value of Poisson's ratio</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.PoissonRatioXY">
+            <summary>
+            Poisson's ratio XY class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatioXY.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Poisson's ratio XY class
+            </summary>
+            <param name="value">value of Poisson's ratio XY</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatioXY.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Poisson's ratio XY class
+            </summary>
+            <param name="value">value of Poisson's ratio XY</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatioXY.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Poisson's ratio XY class
+            </summary>
+            <param name="value">value of Poisson's ratio XY</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.PoissonRatioXZ">
+            <summary>
+            Poisson's ratio XZ class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatioXZ.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Poisson's ratio XZ class
+            </summary>
+            <param name="value">value of Poisson's ratio XZ</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatioXZ.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Poisson's ratio XZ class
+            </summary>
+            <param name="value">value of Poisson's ratio XZ</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatioXZ.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Poisson's ratio XZ class
+            </summary>
+            <param name="value">value of Poisson's ratio XZ</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.PoissonRatioYZ">
+            <summary>
+            Poisson's ratio YZ class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatioYZ.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Poisson's ratio YZ class
+            </summary>
+            <param name="value">value of Poisson's ratio YZ</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatioYZ.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Poisson's ratio YZ class
+            </summary>
+            <param name="value">value of Poisson's ratio YZ</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PoissonRatioYZ.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Poisson's ratio YZ class
+            </summary>
+            <param name="value">value of Poisson's ratio YZ</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.ShearModulus">
+            <summary>
+            Shear modulus class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulus.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Shear modulus class
+            </summary>
+            <param name="value">value of shear modulus</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulus.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Shear modulus class
+            </summary>
+            <param name="value">value of shear modulus</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulus.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Shear modulus class
+            </summary>
+            <param name="value">value of shear modulus</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.ShearModulusXY">
+            <summary>
+            Shear modulus XY class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulusXY.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Shear modulus XY class
+            </summary>
+            <param name="value">value of shear modulus XY</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulusXY.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Shear modulus XY class
+            </summary>
+            <param name="value">value of shear modulus XY</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulusXY.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Shear modulus XY class
+            </summary>
+            <param name="value">value of shear modulus XY</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.ShearModulusXZ">
+            <summary>
+            Shear modulus XZ class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulusXZ.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Shear modulus XZ class
+            </summary>
+            <param name="value">value of shear modulus XZ</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulusXZ.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Shear modulus XZ class
+            </summary>
+            <param name="value">value of shear modulus XZ</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulusXZ.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Shear modulus XZ class
+            </summary>
+            <param name="value">value of shear modulus XZ</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.ShearModulusYZ">
+            <summary>
+            Shear modulus YZ class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulusYZ.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Shear modulus YZ class
+            </summary>
+            <param name="value">value of shear modulus YZ</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulusYZ.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Shear modulus YZ class
+            </summary>
+            <param name="value">value of shear modulus YZ</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ShearModulusYZ.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Shear modulus YZ class
+            </summary>
+            <param name="value">value of shear modulus YZ</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.YoungModulus">
+            <summary>
+            Young's modulus class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulus.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Young's modulus class
+            </summary>
+            <param name="value">value of Young's modulus</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulus.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Young's modulus class
+            </summary>
+            <param name="value">value of Young's modulus</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulus.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Young's modulus class
+            </summary>
+            <param name="value">value of Young's modulus</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.YoungModulusX">
+            <summary>
+            Young's modulus X direction class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulusX.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Young's modulus X directionclass
+            </summary>
+            <param name="value">value of Young's modulus X direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulusX.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Young's modulus X directionclass
+            </summary>
+            <param name="value">value of Young's modulus X direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulusX.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Young's modulus X direction class
+            </summary>
+            <param name="value">value of Young's modulus X direction</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.YoungModulusY">
+            <summary>
+            Young's modulus Y direction class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulusY.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Young's modulus Y directionclass
+            </summary>
+            <param name="value">value of Young's modulus Y direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulusY.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Young's modulus Y directionclass
+            </summary>
+            <param name="value">value of Young's modulus Y direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulusY.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Young's modulus Y direction class
+            </summary>
+            <param name="value">value of Young's modulus Y direction</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.YoungModulusZ">
+            <summary>
+            Young's modulus Z direction class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulusZ.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Young's modulus Z directionclass
+            </summary>
+            <param name="value">value of Young's modulus Z direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulusZ.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Young's modulus Z directionclass
+            </summary>
+            <param name="value">value of Young's modulus Z direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YoungModulusZ.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Young's modulus Z direction class
+            </summary>
+            <param name="value">value of Young's modulus Z direction</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.BilinearCombinedIsotropicKinematicHardeningMaterial">
+            <summary>
+            Bilinear Combined Isotropic Kinematic Hardening Material of structure class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.BilinearCombinedIsotropicKinematicHardeningMaterial.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of Bilinear Combined Isotropic Kinematic Hardening Material of structure class
+            </summary>
+            <param name="E">Young's modulus</param>
+            <param name="nu">Poisson's ratio</param>
+            <param name="sigmaY">Yield Strength</param>
+            <param name="Et">Tangent Modulus</param>
+            <param name="combinedIsotropicKinematicParameter">Combined Isotropic Kinematic Parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.BilinearIsotropicHardeningMaterial">
+            <summary>
+            Bilinear Isotropic Hardening Material of structure class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.BilinearIsotropicHardeningMaterial.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of Bilinear Isotropic Hardening Material of structure class
+            </summary>
+            <param name="E">Young's modulus</param>
+            <param name="nu">Poisson's ratio</param>
+            <param name="sigmaY">Yield Strength</param>
+            <param name="Et">Tangent Modulus</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.BilinearKinematicHardeningMaterial">
+            <summary>
+            Bilinear Kinematic Hardening Material of structure class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.BilinearKinematicHardeningMaterial.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of Bilinear Kinematic Hardening Material of structure class
+            </summary>
+            <param name="E">Young's modulus</param>
+            <param name="nu">Poisson's ratio</param>
+            <param name="sigmaY">Yield Strength</param>
+            <param name="Et">Tangent Modulus</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.FGMOneGradedDirectionMaterial">
+            <summary>
+            Isotropic FGM one variable distribution on one direction material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.FGMOneGradedDirectionMaterial.#ctor(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Constructor isotropic FGM one variable material
+            </summary>
+            <param name="name">Name of material</param>
+            <param name="direction">The direction has graded material distribution</param>
+            <param name="isGlobal">coordinations on physics or parametric coordinate</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.FGMOneGradedDirectionMaterial.GetDirectionGraded">
+            <summary>
+            Return direction of graded distribution
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.FGMStructureOneVariableMaterial">
+            <summary>
+            Isotropic FGM one variable distribution on one direction material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.FGMStructureOneVariableMaterial.#ctor(DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,System.Int32,System.Boolean)">
+            <summary>
+            Constructor isotropic FGM one variable material
+            </summary>
+            <param name="E">Young modulus graded function</param>
+            <param name="nu">Poisson 's ratio graded function</param>
+            <param name="direction">The direction has graded material distribution</param>
+            <param name="isGlobal">coordinations on physics or parametric coordinate</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.FGMThermalOneGradedDirectionMaterial">
+            <summary>
+            Isotropic FGM one variable distribution on one direction material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.FGMThermalOneGradedDirectionMaterial.#ctor(DEMSoft.Function.FunctionRToR,System.Int32,System.Boolean)">
+            <summary>
+            Constructor thermal FGM one variable material
+            </summary>
+            <param name="K">Thermal conductivity graded function</param>
+            <param name="direction">The direction has graded material distribution</param>
+            <param name="isGlobal">coordinations on physics or parametric coordinate</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.FGMUserDefinedGradedMaterial">
+            <summary>
+            Isotropic FGM one variable distribution on one direction material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.FGMUserDefinedGradedMaterial.#ctor(System.String,System.Boolean)">
+            <summary>
+            Constructor isotropic FGM one variable material
+            </summary>
+            <param name="name">Name of material</param>
+            <param name="isGlobal">coordinations on physics or parametric coordinate</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.FGMUserDefinedGradedMaterial.GetIsGlobal">
+            <summary>
+            Return global parameter coordination
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.TypeMaterialStructure">
+            <summary>
+            Type of constituent material
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.TypeMaterialStructure.Elasticity">
+            <summary>
+            Linear elasticity material
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.TypeMaterialStructure.Plasticity">
+            <summary>
+            Non-linear plasticity material
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.TypeMaterialStructure.Hyperelasticity">
+            <summary>
+            Non-linear hyperelasticity material
+            </summary>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.Material">
+            <summary>
+            Material class. It stores list of material property .
+            </summary>
+        </member>
+        <member name="P:DEMSoft.EngineeringData.Material.TypeMaterialStructure">
+            <summary>
+            Store type of material (elasticity, plasticity, hyperelasticity) of structure
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Material.#ctor(System.String)">
+            <summary>
+            Constructor of material
+            </summary>
+            <param name="name">name of material</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Material.GetMaterialName">
+            <summary>
+            Return name of material
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Material.AddProperty(DEMSoft.EngineeringData.MaterialProperty)">
+            <summary>
+            Add material property into material
+            </summary>
+            <param name="property">Material property  class</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Material.GetProperty(DEMSoft.EngineeringData.MaterialPropertyName)">
+            <summary>
+            Return material property  object by name of material property.
+            </summary>
+            <param name="nameProperty">Name of material property</param>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Material.GetAllNameOfProperty">
+            <summary>
+            Return all name of material property in this material.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Material.GetNumberOfProperty">
+            <summary>
+            Return number of material property in this material.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.MooneyRivlinMaterial">
+            <summary>
+            Mooney Rivlin Material class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MooneyRivlinMaterial.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of Mooney Rivlin Material class
+            </summary>
+            <param name="c10"></param>
+            <param name="c01"></param>
+            <param name="D1"></param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.NeoHookeanMaterial">
+            <summary>
+            Isotropic Neo-Hookean material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.NeoHookeanMaterial.#ctor(System.Double,System.Double)">
+            <summary>
+            Constructor isotropic neo-hookean material
+            </summary>
+            <param name="mu">Shear Modulus</param>
+            <param name="D1">Incompressibility parameter, as 2/K, K is the bulk modulus</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.NeoHookeanMaterial.#ctor(DEMSoft.EngineeringData.MaterialPropertyName,System.Double,DEMSoft.EngineeringData.MaterialPropertyName,System.Double)">
+            <summary>
+            Constructor isotropic neo-hookean material
+            </summary>
+            <param name="firstProperty">First name of material property</param>
+            <param name="firstValue">First value of material property</param>
+            <param name="secondProperty">Second name of material property</param>
+            <param name="secondValue">Second value of material property</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.PlasticityMaterial">
+            <summary>
+            Plasticity Material of structure class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.PlasticityMaterial.#ctor(System.Double,System.Double)">
+            <summary>
+            Constructor of Bilinear Isotropic Hardening Material of structure class
+            </summary>
+            <param name="E">Young's modulus</param>
+            <param name="nu">Poisson's ratio</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.StructuralSteelMaterial">
+            <summary>
+            Steel material of structure class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.StructuralSteelMaterial.#ctor">
+            <summary>
+            Constructor of steel material of structure class
+            </summary>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.MaterialProperty">
+            <summary>
+            Class of material property. It stores value of property as a number
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MaterialProperty.#ctor(DEMSoft.EngineeringData.MaterialPropertyName,System.String)">
+            <summary>
+            Constructor of material property class. This material property does not have value property, it stores other material property
+            </summary>
+            <param name="nameProperty">Name of material property (Ex: MaterialPropertyName.IsotropicElasticity)</param>
+            <param name="description">Desciption of material property</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MaterialProperty.#ctor(DEMSoft.EngineeringData.MaterialPropertyName,System.Double,System.String)">
+            <summary>
+            Constructor of material property class. This material property has value property
+            </summary>
+            <param name="nameProperty">Name of material property (Ex: MaterialPropertyName.YoungModulus)</param>
+            <param name="value">Value of material property</param>
+            <param name="description">Desciption of material property</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MaterialProperty.GetNameClassObjectOfValueProperty">
+            <summary>
+            Get object of value property
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MaterialProperty.GetValueProperty">
+            <summary>
+            Get value of material property as a number
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MaterialProperty.GetValueProperty(System.Double)">
+            <summary>
+            Get value of material property by parameter
+            </summary>
+            <param name="x">parameter variable</param>
+            <returns>value of material property</returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MaterialProperty.GetNameOfProperty">
+            <summary>
+            Get name of material property
+            </summary>
+            <returns>Name of material property</returns>
+        </member>
+        <member name="P:DEMSoft.EngineeringData.MaterialProperty.Description">
+            <summary>
+            Get description of material property
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MaterialProperty.GetNumberOfChildProperty">
+            <summary>
+            Get number of child material property
+            </summary>
+            <returns>number of child material property</returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MaterialProperty.GetAllNameOfProperty">
+            <summary>
+            Get all of name of material property. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MaterialProperty.GetProperty(DEMSoft.EngineeringData.MaterialPropertyName)">
+            <summary>
+            Get material property object with name of material property
+            </summary>
+            <param name="nameProperty">Name of material property</param>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MaterialProperty.AddProperty(DEMSoft.EngineeringData.MaterialProperty)">
+            <summary>
+            Add child material property into list of material property
+            </summary>
+            <param name="property">child material property</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.MaterialPropertyName">
+            <summary>
+            Name of material property
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.Density">
+            <summary>
+            Density
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.Tabular">
+            <summary>
+            Tabular data
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.IsotropicElasticity">
+            <summary>
+            Isotropic Elasticity
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.FGMIsotropicElasticity">
+            <summary>
+            Isotropic Elasticity of functionaly graded material
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.YieldStrength">
+            <summary>
+            Yield Strength
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.TangentModulus">
+            <summary>
+            Tangent modulus
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.YoungModulus">
+            <summary>
+            Young's modulus
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.PoissonRatio">
+            <summary>
+            Poisson's ratio
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.ShearModulus">
+            <summary>
+            Shear modulus
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.OrthotropicElasticity">
+            <summary>
+             Orthotropic Elasticity
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.YoungModulusX">
+            <summary>
+            Young's modulus X direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.YoungModulusY">
+            <summary>
+            Young's modulus Y direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.YoungModulusZ">
+            <summary>
+            Young's modulus Z direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.PoissonRatioXY">
+            <summary>
+            Poisson's ratio XY
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.PoissonRatioYZ">
+            <summary>
+            Poisson's ratio YZ
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.PoissonRatioXZ">
+            <summary>
+            Poisson's ratio XZ
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.ShearModulusXY">
+            <summary>
+            Shear modulus XY
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.ShearModulusYZ">
+            <summary>
+            Shear modulus YZ
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.ShearModulusXZ">
+            <summary>
+            Shear modulus XZ
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.AnisotropicElasticity">
+            <summary>
+            Anisotropic Elasticity
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.LameParameter">
+            <summary>
+            Lamé constants
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.BulkModulus">
+            <summary>
+            Bulk modulus
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.IsotropicThermalConductivity">
+            <summary>
+            Isotropic Thermal Conductivity
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.ReferenceTemperature">
+            <summary>
+            Zero-thermal-strain reference temperature
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.IsotropicSecantCoefficientThermalExpansion">
+            <summary>
+            Isotropic secant coefficient of thermal expansion
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.CoefficientThermalExpansion">
+            <summary>
+            Coefficients of thermal expansion
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.IsotropicInstantaneousCoefficientThermalExpansion">
+            <summary>
+            Isotropic instantaneous coefficient of thermal expansion
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.OrthotropicInstantaneousCoefficientThermalExpansion">
+            <summary>
+            Orthotropic instantaneous coefficient of thermal expansion
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.OrthotropicSecantCoefficientThermalExpansion">
+            <summary>
+            Orthotropic secant coefficient of thermal expansion
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.SecantCoefficientThermalExpansionX">
+            <summary>
+            Orthotropic secant coefficients of thermal expansion X direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.SecantCoefficientThermalExpansionY">
+            <summary>
+            Orthotropic secant coefficients of thermal expansion Y direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.SecantCoefficientThermalExpansionZ">
+            <summary>
+            Orthotropic secant coefficients of thermal expansion Z direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.InstantaneousCoefficientThermalExpansionX">
+            <summary>
+            Orthotropic instantaneous coefficients of thermal expansion X direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.InstantaneoustCoefficientThermalExpansionY">
+            <summary>
+            Orthotropic instantaneous coefficients of thermal expansion Y direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.InstantaneousCoefficientThermalExpansionZ">
+            <summary>
+            Orthotropic instantaneous coefficients of thermal expansion Z direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.OrthotropicThermalConductivity">
+            <summary>
+            Orthotropic Thermal Conductivity
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.FGMThermalConductivity">
+            <summary>
+            Functionally Graded Material of thermal conductivity
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.SpecificHeatCapacity">
+            <summary>
+            Specific Heat Capacity
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.XThermalConductivity">
+            <summary>
+            Thermal Conductivity X Direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.YThermalConductivity">
+            <summary>
+            Thermal Conductivity Y Direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.ZThermalConductivity">
+            <summary>
+            Thermal Conductivity Z Direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.TensileYieldStrength">
+            <summary>
+            Tensile Yield Strength
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.PlasticStrain">
+            <summary>
+            Plastic strain be used in Multilinear hardening
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.Stress">
+            <summary>
+            Stress be used in Multilinear hardening
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.BilinearIsotropicHardening">
+            <summary>
+            Bilinear Isotropic hardening
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.MultilinearIsotropicHardening">
+            <summary>
+            Multilinear Isotropic hardening
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.BilinearKinematicHardening">
+            <summary>
+            Bilinear Kinematic hardening
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.MultilinearKinematicHardening">
+            <summary>
+            Multilinear Kinematic hardening
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.BilinearCombinedIsotropicKinematicHardening">
+            <summary>
+            Bilinear Combined Isotropic/Kinematic hardening
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.CombinedIsotropicKinematicParameter">
+            <summary>
+            Combined Isotropic/Kinematic hardening parameter
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.NeoHookean">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.OrthotropicDielectricMatrix">
+            <summary>
+            Orthotropic dielectric matrix 
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.AnisotropicDielectricMatrix">
+            <summary>
+            Anisotropic dielectric matrix 
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.ElectricPermittivityX">
+            <summary>
+            Relative electric permittivity X direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.ElectricPermittivityY">
+            <summary>
+            Relative electric permittivity Y direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.ElectricPermittivityZ">
+            <summary>
+            Relative electric permittivity Z direction
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.PiezoelectricMatrix">
+            <summary>
+            Piezoelectric Matrix
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.CriticalEnergyReleaseRate">
+            <summary>
+            Critical Energy Release Rate Gc
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.GriffithCriticalEnergyReleaseRate">
+            <summary>
+            Griffith's Critical Energy Release Rate Gc
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.NonLocalParameter">
+            <summary>
+            Nonlocal parameter in nonlocal theory
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.GeneralNonLocalParameter1">
+            <summary>
+            General Nonlocal parameter in nonlocal theory 1 corressponding to lamda
+            </summary>
+        </member>
+        <member name="F:DEMSoft.EngineeringData.MaterialPropertyName.GeneralNonLocalParameter2">
+            <summary>
+            General Nonlocal parameter in nonlocal theory 2 corressponding to mu
+            </summary>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.D1">
+            <summary>
+            Incompressibility parameter, as 2/K, K is the bulk modulus
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.D1.#ctor(System.Double)">
+            <summary>
+            Constructor incompressibility parameter
+            </summary>
+            <param name="value">Incompressibility parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.CoefficientThermalExpansion">
+            <summary>
+            Coefficient of thermal expansion
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansion.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar coefficient of thermal expansion parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansion.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable coefficient of thermal expansion parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansion.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables coefficient of thermal expansion parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.CoefficientThermalExpansionX">
+            <summary>
+            Coefficient of thermal expansion X direction
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansionX.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar coefficient of thermal expansion X direction parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion X direction parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansionX.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable coefficient of thermal expansion X direction parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion X direction parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansionX.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables coefficient of thermal expansion X direction parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion X direction parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.CoefficientThermalExpansionY">
+            <summary>
+            Coefficient of thermal expansion Y direction
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansionY.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar coefficient of thermal expansion Y direction parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion Y direction parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansionY.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable coefficient of thermal expansion Y direction parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion Y direction parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansionY.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables coefficient of thermal expansion Y direction parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion Y direction parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.CoefficientThermalExpansionZ">
+            <summary>
+            Coefficient of thermal expansion Z direction
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansionZ.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar coefficient of thermal expansion Z direction parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion Z direction parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansionZ.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable coefficient of thermal expansion Z direction parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion Z direction parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CoefficientThermalExpansionZ.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables coefficient of thermal expansion Z direction parameter class
+            </summary>
+            <param name="value">Value of Coefficient of thermal expansion Z direction parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.Density">
+            <summary>
+            Density parameter class. It stores value of density of material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Density.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar density parameter class
+            </summary>
+            <param name="value">Value of density parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Density.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable density parameter class
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Density.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables density parameter class
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.GeneralNonLocalParameter1">
+            <summary>
+            Nonlocal parameter class. It stores value of nonlocal of material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.GeneralNonLocalParameter1.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar nonlocal parameter class
+            </summary>
+            <param name="value">Value of nonlocal parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.GeneralNonLocalParameter1.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable nonlocal parameter class
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.GeneralNonLocalParameter1.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables nonlocal parameter class
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.GeneralNonLocalParameter2">
+            <summary>
+            Nonlocal parameter class. It stores value of nonlocal of material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.GeneralNonLocalParameter2.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar nonlocal parameter class
+            </summary>
+            <param name="value">Value of nonlocal parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.GeneralNonLocalParameter2.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable nonlocal parameter class
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.GeneralNonLocalParameter2.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables nonlocal parameter class
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.IsotropicInstantaneousCoefficientThermalExpansion">
+            <summary>
+            Isotropic instantaneous coefficient of thermal expansion class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicInstantaneousCoefficientThermalExpansion.#ctor(System.Double)">
+            <summary>
+            Constructor scalar Isotropic instantaneous coefficient of thermal expansion.
+            </summary>
+            <param name="therEx">coefficient of thermal expansion</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicInstantaneousCoefficientThermalExpansion.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor one variable Isotropic instantaneous coefficient of thermal expansion.
+            </summary>
+            <param name="therEx">coefficient of thermal expansion</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicInstantaneousCoefficientThermalExpansion.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor two variable Isotropic instantaneous coefficient of thermal expansion.
+            </summary>
+            <param name="therEx">coefficient of thermal expansion</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.IsotropicSecantCoefficientThermalExpansion">
+            <summary>
+            Isotropic secant coefficient of thermal expansion class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicSecantCoefficientThermalExpansion.#ctor(System.Double,System.Double)">
+            <summary>
+            Constructor scalar Isotropic secant coefficient of thermal expansion.
+            </summary>
+            <param name="therEx">coefficient of thermal expansion</param>
+            <param name="refTemp">Zero-thermal-strain reference temperature</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicSecantCoefficientThermalExpansion.#ctor(DEMSoft.Function.FunctionRToR,System.Double)">
+            <summary>
+            Constructor one variable Isotropic secant coefficient of thermal expansion.
+            </summary> 
+            <param name="therEx">coefficient of thermal expansion</param>
+            <param name="refTemp">Zero-thermal-strain reference temperature</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicSecantCoefficientThermalExpansion.#ctor(DEMSoft.Function.UserDefineFunction,System.Double)">
+            <summary>
+            Constructor two variables Isotropic secant coefficient of thermal expansion.
+            </summary>
+            <param name="therEx">coefficient of thermal expansion</param>
+            <param name="refTemp">Zero-thermal-strain reference temperature</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.NonLocalParameter">
+            <summary>
+            Nonlocal parameter class. It stores value of nonlocal of material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.NonLocalParameter.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar nonlocal parameter class
+            </summary>
+            <param name="value">Value of nonlocal parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.NonLocalParameter.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable nonlocal parameter class
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.NonLocalParameter.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables nonlocal parameter class
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.OrthotropicInstantaneousCoefficientThermalExpansion">
+             <summary>
+            Orthotropic Instantaneous coefficient of thermal expansion class
+             </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicInstantaneousCoefficientThermalExpansion.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor scalar Orthotropic Instantaneous coefficient of thermal expansion.
+            </summary>
+            <param name="therExX">Value of Coefficient of thermal expansion X direction parameter</param>
+            <param name="therExY">Value of Coefficient of thermal expansion Y direction parameter</param>
+            <param name="therExZ">Value of Coefficient of thermal expansion Z direction parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicInstantaneousCoefficientThermalExpansion.#ctor(DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor one variable Orthotropic Instantaneous coefficient of thermal expansion.
+            </summary>
+            <param name="therExX">Value of Coefficient of thermal expansion X direction parameter</param>
+            <param name="therExY">Value of Coefficient of thermal expansion Y direction parameter</param>
+            <param name="therExZ">Value of Coefficient of thermal expansion Z direction parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicInstantaneousCoefficientThermalExpansion.#ctor(DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor two variables Orthotropic Instantaneous coefficient of thermal expansion.
+            </summary>
+            <param name="therExX">Value of Coefficient of thermal expansion X direction parameter</param>
+            <param name="therExY">Value of Coefficient of thermal expansion Y direction parameter</param>
+            <param name="therExZ">Value of Coefficient of thermal expansion Z direction parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.OrthotropicSecantCoefficientThermalExpansion">
+             <summary>
+            Orthotropic secant coefficient of thermal expansion class
+             </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicSecantCoefficientThermalExpansion.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor scalar Orthotropic secant coefficient of thermal expansion.
+            </summary>
+            <param name="therExX">Value of Coefficient of thermal expansion X direction parameter</param>
+            <param name="therExY">Value of Coefficient of thermal expansion Y direction parameter</param>
+            <param name="therExZ">Value of Coefficient of thermal expansion Z direction parameter</param>
+            <param name="refTemp">Zero-thermal-strain reference temperature</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicSecantCoefficientThermalExpansion.#ctor(DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,System.Double)">
+            <summary>
+            Constructor one variable Orthotropic secant coefficient of thermal expansion.
+            </summary>
+            <param name="therExX">Value of Coefficient of thermal expansion X direction parameter</param>
+            <param name="therExY">Value of Coefficient of thermal expansion Y direction parameter</param>
+            <param name="therExZ">Value of Coefficient of thermal expansion Z direction parameter</param>
+            <param name="refTemp">Zero-thermal-strain reference temperature</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicSecantCoefficientThermalExpansion.#ctor(DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,System.Double)">
+            <summary>
+            Constructor two variables Orthotropic secant coefficient of thermal expansion.
+            </summary>
+            <param name="therExX">Value of Coefficient of thermal expansion X direction parameter</param>
+            <param name="therExY">Value of Coefficient of thermal expansion Y direction parameter</param>
+            <param name="therExZ">Value of Coefficient of thermal expansion Z direction parameter</param>
+            <param name="refTemp">Zero-thermal-strain reference temperature</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.ReferenceTemperature">
+            <summary>
+            Zero-thermal-strain reference temperature parameter class. It stores value of density of material
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ReferenceTemperature.#ctor(System.Double)">
+            <summary>
+            Constructor of Zero-thermal-strain reference temperature parameter class
+            </summary>
+            <param name="value">Value of Zero-thermal-strain reference temperature parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.BilinearCombinedIsotropicKinematicHardening">
+            <summary>
+            Bilinear Combined Isotropic/Kinematic Hardening class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.BilinearCombinedIsotropicKinematicHardening.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of Bilinear Combined Isotropic/Kinematic Hardening class
+            </summary>
+            <param name="yieldStrength">Yield Strength</param>
+            <param name="tangentModulus">Tangent Modulus</param>
+            <param name="combinedIsotropicKinematicParameter">Combined Isotropic Kinematic Parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.BilinearIsotropicHardening">
+            <summary>
+            Bilinear Isotropic Hardening class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.BilinearIsotropicHardening.#ctor(System.Double,System.Double)">
+            <summary>
+            Constructor of Bilinear Isotropic Hardening class
+            </summary>
+            <param name="yieldStrength">Yield Strength</param>
+            <param name="tangentModulus">Tangent Modulus</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.BilinearKinematicHardening">
+            <summary>
+            Bilinear Kinematic Hardening class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.BilinearKinematicHardening.#ctor(System.Double,System.Double)">
+            <summary>
+            Constructor of Bilinear Kinematic Hardening class
+            </summary>
+            <param name="yieldStrength">Yield Strength</param>
+            <param name="tangentModulus">Tangent Modulus</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.CombinedIsotropicKinematicParameter">
+            <summary>
+            Combined Isotropic/Kinematic Parameter class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CombinedIsotropicKinematicParameter.#ctor(System.Double)">
+            <summary>
+            Constructor of Combined Isotropic/Kinematic Parameter class
+            </summary>
+            <param name="value">value of Combined Isotropic/Kinematic Parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.MultilinearIsotropicHardening">
+            <summary>
+            Multilinear Isotropic Hardening class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MultilinearIsotropicHardening.#ctor(System.Double[],System.Double[])">
+            <summary>
+            Constructor of Multilinear Isotropic Hardening class
+            </summary>
+            <param name="plasticStrain">Plastic Strain</param>
+            <param name="stress">stress</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.MultilinearKinematicHardening">
+            <summary>
+            Multilinear Kinematic Hardening class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.MultilinearKinematicHardening.#ctor(System.Double[],System.Double[])">
+            <summary>
+            Constructor of Multilinear Kinematic Hardening class
+            </summary>
+            <param name="plasticStrain">Plastic Strain</param>
+            <param name="stress">stress</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.TangentModulus">
+            <summary>
+            Tangent Modulus parameter class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.TangentModulus.#ctor(System.Double)">
+            <summary>
+            Constructor of Tangent Modulus parameter class
+            </summary>
+            <param name="value">value of Tangent Modulus parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.YieldStrength">
+            <summary>
+            Yield Strength parameter class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YieldStrength.#ctor(System.Double)">
+            <summary>
+            Constructor of Yield Strength parameter class
+            </summary>
+            <param name="value">value of Yield Strength parameter</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.CriticalEnergyReleaseRate">
+            <summary>
+            Critical Energy Release Rate class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CriticalEnergyReleaseRate.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Critical Energy Release Rate class
+            </summary>
+            <param name="value">value of Critical Energy Release Rate</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CriticalEnergyReleaseRate.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Critical Energy Release Rate class
+            </summary>
+            <param name="value">value of Critical Energy Release Rate</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.CriticalEnergyReleaseRate.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Critical Energy Release Rate class
+            </summary>
+            <param name="value">value of Critical Energy Release Rate</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.GriffithCriticalEnergyReleaseRate">
+            <summary>
+            Griffith's Critical Energy Release Rate class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.GriffithCriticalEnergyReleaseRate.#ctor(System.Double)">
+            <summary>
+            Constructor of scalar Griffith's Critical Energy Release Rate class
+            </summary>
+            <param name="value">value of Griffith's Critical Energy Release Rate</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.GriffithCriticalEnergyReleaseRate.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Griffith's Critical Energy Release Rate class
+            </summary>
+            <param name="value">value of Griffith's Critical Energy Release Rate</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.GriffithCriticalEnergyReleaseRate.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables Griffith's Critical Energy Release Rate class
+            </summary>
+            <param name="value">value of Griffith's Critical Energy Release Rate</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.TensileYieldStrength">
+            <summary>
+            Tensile Yield Strength parameter class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.TensileYieldStrength.#ctor(System.Double)">
+            <summary>
+            Constructor of tensile yield strength parameter class
+            </summary>
+            <param name="value">value of tensile yield strength parameter</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.TensileYieldStrength.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable tensile yield strength parameter class
+            </summary>
+            <param name="value">value of Griffith's Critical Energy Release Rate</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.TensileYieldStrength.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables tensile yield strength parameter class
+            </summary>
+            <param name="value">value of tensile yield strength parameter </param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.Tabular">
+            <summary>
+            Tabular class store data on table. One column is one field
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Tabular.#ctor(System.Double[0:,0:],DEMSoft.EngineeringData.MaterialPropertyName[])">
+            <summary>
+            Constructor of Tabular class
+            </summary>
+            <param name="data">data of tabular</param>
+            <param name="nameOfColumn">Name of this column</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.Tabular.GetNameOfColumn(System.Int32)">
+            <summary>
+            Get name of column has index is "index"
+            </summary>
+            <param name="index">index of column</param>
+            <returns></returns>
+        </member>
+        <member name="P:DEMSoft.EngineeringData.Tabular.Item(System.Int32,System.Int32)">
+            <summary>
+            Get value of this tabular
+            </summary>
+            <param name="i">Row index</param>
+            <param name="j">Column index</param>
+            <returns></returns>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.IsotropicThermalConductivity">
+            <summary>
+            Isotropic thermal conductivity class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicThermalConductivity.#ctor(System.Double)">
+            <summary>
+            Constructor of isotropic thermal conductivity
+            </summary>
+            <param name="k">value of isotropic thermal conductivity</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicThermalConductivity.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable isotropic thermal conductivity
+            </summary>
+            <param name="k">value of isotropic thermal conductivity</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.IsotropicThermalConductivity.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables isotropic thermal conductivity
+            </summary>
+            <param name="k">value of isotropic thermal conductivity</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.OrthotropicThermalConductivity">
+            <summary>
+            Orthotropic thermal conductivity class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicThermalConductivity.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of Orthotropic thermal conductivity
+            </summary>
+            <param name="kx">Thermal conductivity X direction</param>
+            <param name="ky">Thermal conductivity y direction</param>
+            <param name="kz">Thermal conductivity x direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicThermalConductivity.#ctor(DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable Orthotropic thermal conductivity
+            </summary>
+            <param name="kx">Thermal conductivity X direction</param>
+            <param name="ky">Thermal conductivity y direction</param>
+            <param name="kz">Thermal conductivity x direction</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.OrthotropicThermalConductivity.#ctor(DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction,DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables isotropic thermal conductivity
+            </summary>
+            <param name="kx">Thermal conductivity X direction</param>
+            <param name="ky">Thermal conductivity y direction</param>
+            <param name="kz">Thermal conductivity x direction</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.SpecificHeatCapacity">
+            <summary>
+            Isotropic thermal conductivity class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.SpecificHeatCapacity.#ctor(System.Double)">
+            <summary>
+            Constructor of isotropic thermal conductivity
+            </summary>
+            <param name="value">value of isotropic thermal conductivity</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.SpecificHeatCapacity.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of one variable isotropic thermal conductivity
+            </summary>
+            <param name="value">value of isotropic thermal conductivity</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.SpecificHeatCapacity.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of two variables isotropic thermal conductivity
+            </summary>
+            <param name="value">value of isotropic thermal conductivity</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.XThermalConductivity">
+            <summary>
+            X thermal conductivity class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.XThermalConductivity.#ctor(System.Double)">
+            <summary>
+            Constructor of X thermal conductivity
+            </summary>
+            <param name="kx">value of X thermal conductivity</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.XThermalConductivity.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of X thermal conductivity
+            </summary>
+            <param name="kx">value of X thermal conductivity</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.XThermalConductivity.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of X thermal conductivity
+            </summary>
+            <param name="kx">value of X thermal conductivity</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.YThermalConductivity">
+            <summary>
+            Y thermal conductivity class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YThermalConductivity.#ctor(System.Double)">
+            <summary>
+            Constructor of Y thermal conductivity
+            </summary>
+            <param name="ky">value of Y thermal conductivity</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YThermalConductivity.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of Y thermal conductivity
+            </summary>
+            <param name="ky">value of Y thermal conductivity</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.YThermalConductivity.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of Y thermal conductivity
+            </summary>
+            <param name="ky">value of Y thermal conductivity</param>
+        </member>
+        <member name="T:DEMSoft.EngineeringData.ZThermalConductivity">
+            <summary>
+            Z thermal conductivity class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ZThermalConductivity.#ctor(System.Double)">
+            <summary>
+            Constructor of Z thermal conductivity
+            </summary>
+            <param name="kz">value of Z thermal conductivity</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ZThermalConductivity.#ctor(DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructor of Y thermal conductivity
+            </summary>
+            <param name="kz">value of Z thermal conductivity</param>
+        </member>
+        <member name="M:DEMSoft.EngineeringData.ZThermalConductivity.#ctor(DEMSoft.Function.UserDefineFunction)">
+            <summary>
+            Constructor of Y thermal conductivity
+            </summary>
+            <param name="kz">value of Z thermal conductivity</param>
+        </member>
+    </members>
+</doc>

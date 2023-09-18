@@ -1,0 +1,12 @@
+-----------------------------------------------------------
+Static structural module
+-----------------------------------------------------------
+Information of problem:
+Date: 9/18/2023 8:48:17 PM
+Parallel computing with 12 CPUs
+Size of problem: 150 dofs
+Type of fields: Structural 
+Variables: UX UY SIGMAXX SIGMAYY SIGMAEQV 
+-----------------------------------------------------------
+Finished!
+Elapsed time = 18.159879[s]

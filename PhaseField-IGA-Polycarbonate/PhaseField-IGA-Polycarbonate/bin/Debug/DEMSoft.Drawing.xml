@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DEMSoft.Drawing</name>
+    </assembly>
+    <members>
+        <member name="T:DEMSoft.Drawing.TypeCoordination">
+            <summary>
+            Enumerate of coordination
+            </summary>
+        </member>
+        <member name="T:DEMSoft.Drawing.Geometry.Line">
+            <summary>
+            Line object
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Drawing.Geometry.Line.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor Line class
+            </summary>
+            <param name="x1">x-coord first point</param>
+            <param name="y1">y-coord first point</param>
+            <param name="z1">z-coord first point</param>
+            <param name="x2">x-coord second point</param>
+            <param name="y2">y-coord second point</param>
+            <param name="z2">z-coord second point</param>
+        </member>
+        <member name="M:DEMSoft.Drawing.Geometry.Line.GetCoordinateFirstPoint">
+            <summary>
+            Get coordinate of the first point
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.Drawing.Geometry.Line.GetCoordinateSecondPoint">
+            <summary>
+            Get coordinate of the first point
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DEMSoft.Drawing.Point">
+            <summary>
+            Point class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Drawing.Point.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of point class
+            </summary>
+            <param name="x">x-coord</param>
+            <param name="y">y-coord</param>
+            <param name="z">z-coord</param>
+        </member>
+        <member name="M:DEMSoft.Drawing.Point.GetCoordinate">
+            <summary>
+            Get coordinate of point
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.Drawing.Point.SetPointSize(System.Single)">
+            <summary>
+            Set point size
+            </summary>
+            <param name="size">Size of point</param>
+        </member>
+        <member name="T:DEMSoft.Drawing.OutlineBox">
+            <summary>
+            Polyline class
+            </summary>
+        </member>
+        <member name="T:DEMSoft.Drawing.Polyline">
+            <summary>
+            Polyline class
+            </summary>
+        </member>
+        <member name="T:DEMSoft.Drawing.Quadrilateral">
+            <summary>
+            Quadrilateral
+            </summary>
+        </member>
+        <member name="F:DEMSoft.Drawing.IsoViewSetup.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Drawing.IsoViewSetup.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DEMSoft.Drawing.IsoViewSetup.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Drawing.Object3D.SetVisible(System.Boolean)">
+            <summary>
+            Specifies the visibility for this object.
+            </summary>
+            <param name="b">visiblity</param>
+        </member>
+        <member name="M:DEMSoft.Drawing.Object3D.SetColor(System.Double,System.Double,System.Double)">
+            <summary>
+            Sets the color of this object. The color is specified by the rgb
+            components of the color. The components must be in the range [0, 1]. For
+            instance, pure red is defined by r=1, g=0 and b=0.
+            </summary>
+            <param name="r">the red component of the color</param>
+            <param name="g">the green component of the color</param>
+            <param name="b">the blue component of the color</param>
+        </member>
+        <member name="M:DEMSoft.Drawing.Object3D.SetColor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Specifies the color for this object. The color is specified by the rgb
+            components of the color. The components must be in the range [0, 255].
+            </summary>
+            <param name="r">the red component of the color</param>
+            <param name="g">the green component of the color</param>
+            <param name="b">the blue component of the color</param>
+        </member>
+        <member name="M:DEMSoft.Drawing.Object3D.SetRandomColor">
+            <summary>
+            Assigns a randomly chosen color to this object.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Drawing.Object3D.SetOpacity(System.Double)">
+            <summary>
+            Sets the opacity of this object to the specified value. The value can
+            range from 0 (completely transparent) to 1 (totally opaque, no
+            transparency).
+            </summary>
+            <param name="o">the new value for the opacity</param>
+        </member>
+        <member name="F:DEMSoft.Drawing.ObserveForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Drawing.ObserveForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DEMSoft.Drawing.ObserveForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DEMSoft.Drawing.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:DEMSoft.Drawing.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:DEMSoft.Drawing.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:DEMSoft.Drawing.Properties.Resources._3dcube">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Drawing.StructuredGrid.#ctor(System.Int32[],System.Double[],System.Double[],System.Double[])">
+            <summary>
+            for k j i
+            </summary>
+            <param name="dimension"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="z"></param>
+        </member>
+        <member name="M:DEMSoft.Drawing.StructuredGrid2D.#ctor(System.Int32[],System.Double[],System.Double[],System.Double[])">
+            <summary>
+            for i j
+            </summary>
+            <param name="dimension"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="z"></param>
+        </member>
+        <member name="T:DEMSoft.Drawing.ViewerForm">
+            <summary>
+            Windows viewer form
+            </summary>
+        </member>
+        <member name="F:DEMSoft.Drawing.ViewerForm.ren1">
+            <summary>
+            Store renderer
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Drawing.ViewerForm.AddObject3D(DEMSoft.Drawing.Object3D)">
+            <summary>
+            Add 3D object
+            </summary>
+            <param name="o">3D Object</param>
+        </member>
+        <member name="M:DEMSoft.Drawing.ViewerForm.Clear">
+            <summary>
+            Clear all view properties
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Drawing.ViewerForm.Run">
+            <summary>
+            Run window form
+            </summary>
+        </member>
+        <member name="F:DEMSoft.Drawing.ViewerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Drawing.ViewerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:DEMSoft.Drawing.ViewerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
