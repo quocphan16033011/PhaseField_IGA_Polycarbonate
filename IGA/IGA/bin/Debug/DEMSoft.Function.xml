@@ -1,0 +1,750 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DEMSoft.Function</name>
+    </assembly>
+    <members>
+        <member name="T:DEMSoft.Function.AbsoluteFunctionRToR">
+            <summary>
+            A exponent function
+            A function f(x) = alpha * |x|
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.AbsoluteFunctionRToR.#ctor(System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A exponent function of function
+            A function f(u(x)) = alpha * |u(x)|
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.AbsoluteFunctionRToR.#ctor(System.Double)">
+            <summary>
+            A exponent function
+            A function f(x) = alpha * |x|
+            </summary>
+            <param name="alpha">alpha</param>
+        </member>
+        <member name="T:DEMSoft.Function.AcosFunctionRToR">
+            <summary>
+            A inversed cosine function
+            A function f(x) = alpha * acos(beta * x)
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.AcosFunctionRToR.#ctor(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A inversed cosine function of function
+            A function f(u(x)) = alpha * arccos(beta * u(x))
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.AcosFunctionRToR.#ctor(System.Double,System.Double)">
+            <summary>
+            A inversed cosine function
+            A function f(x) = alpha * arccos(beta * x)
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+        </member>
+        <member name="T:DEMSoft.Function.AcotFunctionRToR">
+            <summary>
+            A inversed sine function
+            A function f(x) = alpha * asin(beta * x)
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.AcotFunctionRToR.#ctor(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A inversed cotangent function of function
+            A function f(u(x)) = alpha * arccot(beta * u(x))
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.AcotFunctionRToR.#ctor(System.Double,System.Double)">
+            <summary>
+            A inversed cotangent function
+            A function f(x) = alpha * arccot(beta * x)
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+        </member>
+        <member name="T:DEMSoft.Function.AsinFunctionRToR">
+            <summary>
+            A inversed sine function
+            A function f(x) = alpha * asin(beta * x)
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.AsinFunctionRToR.#ctor(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A inversed sine function of function
+            A function f(u(x)) = alpha * arcsin(beta * u(x))
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.AsinFunctionRToR.#ctor(System.Double,System.Double)">
+            <summary>
+            A inversed sine function
+            A function f(x) = alpha * arcsin(beta * x)
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+        </member>
+        <member name="T:DEMSoft.Function.AtanFunctionRToR">
+            <summary>
+            A inversed sine function
+            A function f(x) = alpha * asin(beta * x)
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.AtanFunctionRToR.#ctor(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A inversed tangent function of function
+            A function f(u(x)) = alpha * arctan(beta * u(x))
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.AtanFunctionRToR.#ctor(System.Double,System.Double)">
+            <summary>
+            A inversed tangent function
+            A function f(x) = alpha * arctan(beta * x)
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+        </member>
+        <member name="T:DEMSoft.Function.ConstantFunctionRToR">
+            <summary>
+            A function [a, b] -> 0.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.ConstantFunctionRToR.#ctor(System.Double)">
+            <summary>
+            Constructs the function
+            </summary>
+            <param name="a">Lower bound</param>
+            <param name="b">Upper bound</param>
+        </member>
+        <member name="T:DEMSoft.Function.CosFunctionRToR">
+            <summary>
+            A cosine function
+            A function f(x) = alpha * cos(beta * x)
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.CosFunctionRToR.#ctor(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A cosine function of function
+            A function f(u(x)) = alpha * cos(beta * u(x))
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.CosFunctionRToR.#ctor(System.Double,System.Double)">
+            <summary>
+            A cosine function
+            A function f(x) = alpha * cos(beta * x)
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+        </member>
+        <member name="T:DEMSoft.Function.CotFunctionRToR">
+            <summary>
+            A cotangent function
+            A function f(x) = alpha * tan(beta * x)
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.CotFunctionRToR.#ctor(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A cotangent function of function
+            A function f(u(x)) = alpha * tan(beta * u(x))
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.CotFunctionRToR.#ctor(System.Double,System.Double)">
+            <summary>
+            A cotangent function
+            A function f(x) = alpha * tan(beta * x)
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+        </member>
+        <member name="T:DEMSoft.Function.DerivativeFunctionRToR">
+            <summary>
+            (F)'
+            </summary>
+        </member>
+        <member name="T:DEMSoft.Function.ExponentFunctionRToR">
+            <summary>
+            A exponent function
+            A function f(x) = alpha * exp(beta * x)
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.ExponentFunctionRToR.#ctor(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A exponent function of function
+            A function f(u(x)) = alpha * exp(beta * u(x))
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.ExponentFunctionRToR.#ctor(System.Double,System.Double)">
+            <summary>
+            A exponent function
+            A function f(x) = alpha * exp(beta * x)
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+        </member>
+        <member name="T:DEMSoft.Function.FunctionDivideFunctionRToR">
+            <summary>
+            F1/F2
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionDivideFunctionRToR.#ctor(DEMSoft.Function.FunctionRToR,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Construct Division u / ( alpha * v )
+            </summary>
+            <param name="alpha"></param>
+            <param name="u"></param>
+            <param name="v"></param>
+        </member>
+        <member name="T:DEMSoft.Function.FunctionMultiplyFunctionRToR">
+            <summary>
+            F1*F2
+            </summary>
+        </member>
+        <member name="T:DEMSoft.Function.FunctionR2ToR">
+            <summary>
+            A function f: [a, b]x[c, d] -> R.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionR2ToR.ValueAt(System.Double,System.Double)">
+            <summary>
+            Computes the function value at the specified point
+            </summary>
+            <param name="xi1">x-coord</param>
+            <param name="xi2">y-coord</param>
+            <returns>value</returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionR2ToR.GradientAt(System.Double,System.Double)">
+            <summary>
+            Computes the gradient [df/dxi1, df/dxi2]^T.
+            </summary>
+            <param name="xi1">x-coord</param>
+            <param name="xi2">y-coord</param>
+            <returns>gradient (array of length 2)</returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionR2ToRDivideFunctionR2ToR.#ctor(DEMSoft.Function.FunctionR2ToR,System.Double,DEMSoft.Function.FunctionR2ToR)">
+            <summary>
+            Construct Division u / ( alpha * v )
+            </summary>
+            <param name="alpha"></param>
+            <param name="u"></param>
+            <param name="v"></param>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionR2ToRMultiplyFunctionR2ToR.#ctor(DEMSoft.Function.FunctionR2ToR,System.Double,DEMSoft.Function.FunctionR2ToR)">
+            <summary>
+            Construct Division u * ( alpha * v )
+            </summary>
+            <param name="alpha"></param>
+            <param name="u"></param>
+            <param name="v"></param>
+        </member>
+        <member name="T:DEMSoft.Function.FunctionRnToR">
+            <summary>
+            A function f: [a, b]x[c, d]x[e, d]... -> R.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRnToR.ValueAt(System.Double[])">
+            <summary>
+            Computes the function value at the specified point
+            </summary>
+            <param name="xi">x-coord</param>
+            <returns>value</returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRnToR.GradientAt(System.Double[])">
+            <summary>
+            Computes the gradient [df/dxi1, df/dxi2]^T.
+            </summary>
+            <param name="xi1">x-coord</param>
+            <param name="xi2">y-coord</param>
+            <returns>gradient (array of length 2)</returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRnToRDivideFunctionRnToR.#ctor(DEMSoft.Function.FunctionRnToR,System.Double,DEMSoft.Function.FunctionRnToR)">
+            <summary>
+            Construct Division u / ( alpha * v )
+            </summary>
+            <param name="alpha"></param>
+            <param name="u"></param>
+            <param name="v"></param>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRnToRMultiplyFunctionRnToR.#ctor(DEMSoft.Function.FunctionRnToR,System.Double,DEMSoft.Function.FunctionRnToR)">
+            <summary>
+            Construct Division u * ( alpha * v )
+            </summary>
+            <param name="alpha"></param>
+            <param name="u"></param>
+            <param name="v"></param>
+        </member>
+        <member name="T:DEMSoft.Function.FunctionRToR">
+            <summary>
+            A function [a, b] -> R
+            </summary>
+        </member>
+        <member name="F:DEMSoft.Function.FunctionRToR.subFunction">
+            <summary>
+            Use Function of Function
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.GetSubFunction">
+            <summary>
+            Get sub function
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.GetP">
+            <summary>
+            Returns the polynomial degree of this function or -1 if the function is not a polynomial. 
+            If this function is piecewise defined, getP returns the maximum polynomial degree.
+            </summary>
+            <returns>
+            the equivalent polynomial degree or -1 if this function is not a polynomial
+            </returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.ValueAt(System.Double)">
+            <summary>
+            Computes the function value at the specified point
+            </summary>
+            <param name="x">point</param>
+            <returns>the function value</returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.DerivativeAt(System.Double)">
+            <summary>
+            Evaluates the derivative at the specified point.
+            </summary>
+            <param name="x">point</param>
+            <returns>the derivative</returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.Add(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            add two functions
+            </summary>
+            <param name="alpha">coefficient of first function</param>
+            <param name="beta">coefficient of second function</param>
+            <param name="v">addition function</param>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.Multiply(System.Double)">
+            <summary>
+            multiply a function with a coefficient
+            </summary>
+            <param name="alpha">coeficient of the function</param>
+            <returns>the function</returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.Multiply(System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            multiply 2 functions
+            </summary>
+            <param name="alpha">coeficient of the function</param>
+            <param name="v">second function</param>
+            <returns>the function</returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.Divide(System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            divide 2 functions
+            </summary>
+            <param name="alpha">coeficient of the function</param>
+            <param name="v">second function</param>
+            <returns>the function</returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.Derivative">
+            <summary>
+            Get derivative of a function
+            </summary>
+            <returns>the derivative function</returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.GetNumberOfInterval(System.Boolean)">
+            <summary>
+            Get number of interval. Alway return 1 except piecewise function
+            </summary>
+            <param name="isContaintInfinity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.Function.FunctionRToR.Integration(System.Double,System.Double,System.Int32)">
+            <summary>
+            Get value of integration of function by Gaussian quadrature
+            https://en.wikipedia.org/wiki/Gaussian_quadrature
+            </summary>
+            <param name="a">lower</param>
+            <param name="b">upper</param>
+            <param name="numberOfGauss">number of Gausspoint</param>
+            <returns></returns>
+        </member>
+        <member name="F:DEMSoft.Function.GaussPoints.MAX_N">
+            <summary>
+            The maximum number of Gauss points provided by this class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.GaussPoints.GetPoint(System.Int32,System.Int32)">
+            <summary>
+            Returns the i-th Gauss point for a Gauss-Legendre quadrature with n 
+            points on the interval [-1, 1].
+            </summary>
+            <param name="n">the number of points to be used for integration.</param>
+            <param name="i">index of the gauss point.</param>
+            <returns>the gauss point</returns>
+        </member>
+        <member name="M:DEMSoft.Function.GaussPoints.GetWeight(System.Int32,System.Int32)">
+            <summary>
+            Returns the weighting factor of the i-th Gauss point for a Gauss-Legendre 
+            quadrature with n points on the interval [-1, 1].
+            </summary>
+            <param name="n">the number of points to be used for integration.</param>
+            <param name="i">index of the gauss point.</param>
+            <returns>the weighting factor for the corresponding gauss point</returns>
+        </member>
+        <member name="M:DEMSoft.Function.GaussPoints.#ctor(System.Double[],System.Double)">
+            <summary>
+            Construction gauss point with location (in parameter) and weigth
+            </summary>
+            <param name="location">Location of gauss point</param>
+            <param name="w">weigth of gauss point</param>
+        </member>
+        <member name="T:DEMSoft.Function.IFunction">
+            <summary>
+            Interface Function
+            </summary>
+        </member>
+        <member name="T:DEMSoft.Function.Interval">
+            <summary>
+            A continuous range between two real numbers
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.Interval.#ctor(System.Double,System.Double)">
+            <summary>
+            Constructs a range
+            </summary>
+            <param name="lower">lower bound</param>
+            <param name="upper">upper bound</param>
+        </member>
+        <member name="P:DEMSoft.Function.Interval.Lower">
+            <summary>
+            Get and set lower
+            </summary>
+        </member>
+        <member name="P:DEMSoft.Function.Interval.Upper">
+            <summary>
+            Get and set upper
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.Interval.ToString">
+            <summary>
+            To string
+            </summary>
+            <returns>[lower,upper]</returns>
+        </member>
+        <member name="M:DEMSoft.Function.Interval.Length">
+            <summary>
+            Length of interval
+            </summary>
+            <returns>upper - lower</returns>
+        </member>
+        <member name="M:DEMSoft.Function.Interval.IsContaint(System.Double)">
+            <summary>
+            Tests the specified value lies inside the range
+            </summary>
+            <param name="value">test value</param>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.Function.Interval.Equals(System.Object)">
+            <summary>
+            Override equals
+            </summary>
+            <param name="obj">object</param>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.Function.Interval.Divide(System.Int32)">
+            <summary>
+            Returns the points which divide the interval into n subintervals.
+            For example, dividing [0, 3] into 2 subintervals returns [0, 1.5, 3].
+            </summary>
+            <param name="n">number of subrange</param>
+            <returns>points</returns>
+        </member>
+        <member name="T:DEMSoft.Function.LinearFunctionRToR">
+            <summary>
+            A linear function over 2 points (a,c) (b,d) 
+            A function f(x)=(c-d)/(a-b)*x+(a*d-b*c)/(a-b) -> R.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.LinearFunctionRToR.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructs the function
+            </summary>
+            <param name="a">x-coord of point 1</param>
+            <param name="b">x-coord of point 2</param>
+            <param name="c">y-coord of point 1</param>
+            <param name="d">y-coord of point 2</param>
+        </member>
+        <member name="M:DEMSoft.Function.LinearFunctionRToR.#ctor(System.Double,System.Double,System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Constructs the linear function of function
+            </summary>
+            <param name="a">x-coord of point 1</param>
+            <param name="b">x-coord of point 2</param>
+            <param name="c">y-coord of point 1</param>
+            <param name="d">y-coord of point 2</param>
+            <param name="subFunction"></param>
+        </member>
+        <member name="T:DEMSoft.Function.LogarithmFunctionRToR">
+            <summary>
+            A power function
+            A function f(x) = alpha * log(beta * x,a)
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.LogarithmFunctionRToR.#ctor(System.Double,System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A power function of function
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="a">lower</param>
+            <param name="subFunction">Sub function</param>
+            <param name="beta">coefficient</param>
+        </member>
+        <member name="M:DEMSoft.Function.LogarithmFunctionRToR.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            A power function
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="a">lower</param>
+            <param name="beta">coefficient</param>
+        </member>
+        <member name="T:DEMSoft.Function.NullFunctionRToR">
+            <summary>
+            A function [a, b] -> 0.
+            </summary>
+        </member>
+        <member name="T:DEMSoft.Function.PiecewiseFunctionRToR">
+            <summary>
+            A piecewise function -> {f1(t) (-Inf,t1); f2(t) (t1,t2); f3(t) (t2,Inf)}.
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.PiecewiseFunctionRToR.#ctor(DEMSoft.Function.FunctionRToR[],System.Double[],System.Int32[])">
+            <summary>
+            Constructs the piecewise function. Example: {f1(t) (-Inf,t1); f2(t) (t1,t2); f3(t) (t2,Inf)}.
+            </summary>
+            <param name="funcs">Array of function. Example: [f1, f2, f3]</param>
+            <param name="pieceNode">Array of piece node. Example: [t1, t2]</param>
+            <param name="equalPieceNode">Array of index of function to be equal at piece node. Example: [1, 2] means t = t1 select function f2 and t2 select function f3</param>
+        </member>
+        <member name="T:DEMSoft.Function.PolynomialFunctionRToR">
+            <summary>
+            Polynpmial f(x)=a0+a1*x^1+a2*x^2+...+an*x^n
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.PolynomialFunctionRToR.#ctor(System.Double[])">
+            <summary>
+            Constructs the Polynomial function
+            </summary>
+            <param name="k">store the degree of Polynomial function k0 + k1 * x + k2 * x^2 + k3 * x^3</param>
+        </member>
+        <member name="M:DEMSoft.Function.PolynomialFunctionRToR.#ctor(DEMSoft.Function.FunctionRToR,System.Double[])">
+            <summary>
+            Constructs the funtion of funtion Polynomial
+            </summary>
+            <param name="subFunction">Sub function</param>
+            <param name="k">store the degree of Polynomial function (k0 + k1 * x + k2 * x^2 + k3 * x^3) OR </param>
+        </member>
+        <member name="M:DEMSoft.Function.PolynomialFunctionRToR.Add(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            add a Polynoial function with an arbitary function
+            </summary>
+            <param name="alpha">coeficient of the Polynomial function</param>
+            <param name="beta">coeficient of the function</param>
+            <param name="v">arbitary function</param>
+            <returns>the Polynomial function if v is Polynomial function otherwise v is an arbitary function</returns>
+        </member>
+        <member name="M:DEMSoft.Function.PolynomialFunctionRToR.Derivative">
+            <summary>
+            get derivative of a Polynoial function
+            </summary>
+            <returns>the Polynomial function</returns>
+        </member>
+        <member name="M:DEMSoft.Function.PolynomialFunctionRToR.Multiply(System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            multiply a Polynomial function with a function
+            </summary>
+            <param name="alpha">coeficient of the function</param>
+            <param name="v">second function</param>
+            <returns>the function</returns>
+        </member>
+        <member name="M:DEMSoft.Function.PolynomialFunctionRToR.Multiply(System.Double)">
+            <summary>
+            multiply a cofficient to with a Polynomial function
+            </summary>
+            <param name="alpha">coeficient of the function</param>
+            <returns>the function</returns>
+        </member>
+        <member name="M:DEMSoft.Function.PolynomialFunctionRToR.GetCoefficient(System.Int32)">
+            <summary>
+            Get coefficient of the Polynomial function at special point
+            </summary>
+            <param name="idx">index</param>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.Function.PolynomialFunctionRToR.GetCoefficients">
+            <summary>
+            get coeficient of the Polynomial function
+            </summary>
+            <returns>the coeficient</returns>
+        </member>
+        <member name="T:DEMSoft.Function.PowerFunctionRToR">
+            <summary>
+            A power function. A function f(x) = alpha * x^n
+            <example>A function f(x) = alpha * x^n</example>
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.PowerFunctionRToR.#ctor(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A power function of function. A function f(U) = alpha * U^n
+            </summary>
+            <param name="alpha">coefficient</param>
+            <param name="n">power</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.PowerFunctionRToR.#ctor(System.Double,System.Double)">
+            <summary>
+            A power function. A function f(x) = alpha * x^n
+            </summary>
+            <param name="alpha">coefficient</param>
+            <param name="n">power</param>
+        </member>
+        <member name="T:DEMSoft.Function.ProductFunctionR2ToR">
+            <summary>
+            Extends the FunctionR2ToR class for products of two functions of type FunctionRToR
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.ProductFunctionR2ToR.#ctor(System.Double,DEMSoft.Function.FunctionRToR,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            Product of two functions of type FunctionRToR w(xi1,xi2) = alpha * u(xi1) * v(xi2)
+            </summary>
+            <param name="alpha">constant factor</param>
+            <param name="u">first function</param>
+            <param name="v">second function</param>
+        </member>
+        <member name="T:DEMSoft.Function.SinFunctionRToR">
+            <summary>
+            A sine function
+            A function f(x) = alpha * sin(beta * x)
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.SinFunctionRToR.#ctor(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A sine function of function
+            A function f(u(x)) = alpha * sin(beta * u(x))
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.SinFunctionRToR.#ctor(System.Double,System.Double)">
+            <summary>
+            A sine function
+            A function f(x) = alpha * sin(beta * x)
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+        </member>
+        <member name="T:DEMSoft.Function.SumFunctionRToR">
+            <summary>
+            F1+F2
+            </summary>
+        </member>
+        <member name="T:DEMSoft.Function.TanFunctionRToR">
+            <summary>
+            A tangent function
+            A function f(x) = alpha * tan(beta * x)
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.TanFunctionRToR.#ctor(System.Double,System.Double,DEMSoft.Function.FunctionRToR)">
+            <summary>
+            A tangent function of function
+            A function f(u(x)) = alpha * tan(beta * u(x))
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+            <param name="subFunction">Sub function</param>
+        </member>
+        <member name="M:DEMSoft.Function.TanFunctionRToR.#ctor(System.Double,System.Double)">
+            <summary>
+            A tangent function
+            A function f(x) = alpha * tan(beta * x)
+            </summary>
+            <param name="alpha">alpha</param>
+            <param name="beta">beta</param>
+        </member>
+        <member name="T:DEMSoft.Function.TubularData">
+            <summary>
+            Multi-linear function ((x1,y1),(x2,y2),...,(xn,yn))
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.TubularData.#ctor(System.Double[],System.Double[])">
+            <summary>
+            Constructor class of Multi-linear function ((x1,y1),(x2,y2),...,(xn,yn))
+            </summary>
+            <param name="valuePointX">array of x-value points {x1, x2, ...,xn}</param>
+            <param name="valuePointY">array of y-value points {y1, y2, ...,yn}</param>
+        </member>
+        <member name="T:DEMSoft.Function.UserDefineFunction">
+            <summary>
+            User defined function class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.UserDefineFunction.#ctor(DEMSoft.Function.UserDefineFunction.UserDefinedFunctionItem)">
+            <summary>
+            Constructor of user defined function class
+            </summary>
+            <param name="delegateFunction">string of function of x variable. Ex: "x^2+2*x-1"</param>
+        </member>
+        <member name="M:DEMSoft.Function.UserDefineFunction.ValueAt(System.Double[])">
+            <summary>
+            Value of function at x variable
+            </summary>
+            <param name="x">value</param>
+            <returns></returns>
+        </member>
+        <member name="T:DEMSoft.Function.UserDefineMatlabFunctionRToR">
+            <summary>
+            User defined function class
+            </summary>
+        </member>
+        <member name="M:DEMSoft.Function.UserDefineMatlabFunctionRToR.#ctor(System.String)">
+            <summary>
+            Constructor of user defined function class
+            </summary>
+            <param name="functionString">string of function of x variable. Ex: "x^2+2*x-1"</param>
+        </member>
+        <member name="M:DEMSoft.Function.UserDefineMatlabFunctionRToR.DerivativeAt(System.Double)">
+            <summary>
+            Value of derivative at x variable
+            </summary>
+            <param name="x">value</param>
+            <returns></returns>
+        </member>
+        <member name="M:DEMSoft.Function.UserDefineMatlabFunctionRToR.ValueAt(System.Double)">
+            <summary>
+            Value of function at x variable
+            </summary>
+            <param name="x">value</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
