@@ -25,15 +25,15 @@ namespace IGA
             ViewerForm viewer = new ViewerForm(true);
             List<NURBSSurface> listSurface = new List<NURBSSurface>();
 
-            NURBSSurface[] sur1 = GeometryCreator.CreateSquareWithHoleEightNURBSSurfaces(4,6,r,a);
+            NURBSSurface sur1 = GeometryCreator.CreateRectangleNURBSSurface(0, 4, 2, 8);
 
             //int p0 = 2;
             //double[,] w = { { 1, 1, 1 }, { 1, 1, 1 }, { 1, 1, 1 }, { 1, 1, 1 } };
             //double[] kv0 = { 0, 0, 0, 0.5, 1, 1, 1 };
-            for (int i = 0; i < sur1.Length; i++)
-            {
-                listSurface.Add(sur1[i]); //patch 0-3
-            }
+            //for (int i = 0; i < sur1.Length; i++)
+            //{
+                listSurface.Add(sur1); //patch 0-3
+            //}
 
             foreach (NURBSSurface surface in listSurface)
             {
